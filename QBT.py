@@ -50,7 +50,7 @@ if match_id in st.session_state.matches:
                 })
                 match['current_turn'] += 1
                 st.session_state.last_update = time.time()  # 更新タイムスタンプを更新
-                st.success(f"問題が出題されました。次のターンをお待ちください。")
+                st.success("問題が出題されました。次のターンをお待ちください。")
                 st.experimental_rerun()  # 自分の画面を再読み込み
         else:
             # ターンが切り替わるまで再読み込みを続ける
